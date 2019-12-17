@@ -1,7 +1,7 @@
 insert into user
 (id, user_name, email, password, profile, create_date, last_modified_date) values 
-(1, 'haluk', 'hincidelen@hotmail.com', 'qwe', 'admin', sysdate(),  sysdate()),
-(2, 'hamid', 'hincidelen@gmail.com', 'asd', 'admin', sysdate(),  sysdate());
+(1, 'haluk', 'hincidelen@hotmail.com', 'qwe', 'ADMIN', sysdate(),  sysdate()),
+(2, 'hamid', 'hincidelen@gmail.com', 'asd', 'USER', sysdate(),  sysdate());
 
 insert into stock
 (id, code, name, price, create_date, last_modified_date) values

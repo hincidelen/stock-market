@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Entity;
+import javax.persistence.EnumType;
+import javax.persistence.Enumerated;
 import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -34,7 +36,8 @@ public class User {
 	private String email;
 	@JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
 	private String password;
-	private String profile;
+	@Enumerated(EnumType.STRING)
+	private Profiles profile;
 	@JsonProperty(access = JsonProperty.Access.READ_ONLY)
 	private Date createDate;
 	@JsonProperty(access = JsonProperty.Access.READ_ONLY)
