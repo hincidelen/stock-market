@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.stockmarket.entity.User;
-import com.stockmarket.service.SecurityServiceImpl;
 import com.stockmarket.service.StockService;
 import com.stockmarket.service.UserService;
 
@@ -24,19 +23,6 @@ public class UserController {
 	
 	@Autowired
 	private UserService userService;
-	
-	@Autowired
-	private SecurityServiceImpl securityService;
-	
-    @GetMapping("/login")
-    public String login(
-    		@RequestParam String username, 
-    		@RequestParam String password
-    		) {
-
-        securityService.autoLogin(username, password);
-		return "OK";
-    }
 	
 	@GetMapping("/{userName}")
 	public User getUser(@PathVariable String userName) {

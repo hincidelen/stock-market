@@ -8,3 +8,5 @@ Borsa Uygulaması
 -Hisseler listeleme, güncelleme ve silme yapılabilecek.
 -Sistem yöneticisi sistem kullanıcısı ekleyecek (İsim, soy isim ve mail)
 -Uygulama kullanıcıları login olduktan sonra tanımlı hisselerden miktarını belirleyerek alabilecekler, Alım satım yapabilecekler.
+
+-"mvn clean package" komutu ile docker imajı oluşturulabilir.
